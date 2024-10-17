@@ -1,0 +1,336 @@
+<%- include('./layouts/header.ejs') %>
+
+
+    <!-- carousel -->
+    <section id="carousel">
+        <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+            <!-- <div class="carousel-indicators">
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"
+                    aria-label="Slide 1" aria-current="true"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"
+                    class=""></button>
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"
+                    class=""></button>
+                </div> -->
+
+            <div class="carousel-inner">
+                <!-- item-1 -->
+                <div class="carousel-item active" data-bs-interval="4000">
+                    <img class="carouselHeight" src="./Images/CampusImage-1.avif" alt="Campus Image-1" width="100%">
+                </div>
+
+                <!-- item-2 -->
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img class="carouselHeight" src="./Images/CampusImage-2.avif" alt="Campus Image-2" width="100%">
+                </div>
+
+                <!-- item-3 -->
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img class="carouselHeight" src="./Images/CampusImage-3.jpeg" alt="Campus Image-3" width="100%">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    <!-- End Carousel -->
+
+    <!-- Courses -->
+    <section id="courses">
+
+        <section class="pt-5 text-center container">
+            <div class="row py-lg-5">
+                <div class="col-lg-6 col-md-8 mx-auto">
+                    <h1 class="fw-light">Welcome User</h1>
+                    <p class="lead text-body-secondary">MAHARANA PRATAP COLLEGE OF TECHNOLOGY, GWALIOR</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Detail -->
+        <div class="container" id="detail">
+            <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+                <div class="col">
+                    <div class="card card-cover h-100 p-5 overflow-hidden text-bg-white rounded-4 shadow-lg">
+                        <p class="fw-light text-dark tmy-auto">Lorem ipsum dolor sit amet, consectetur
+                            adipisicing elit. Iste, amet? Quam obcaecati dolore excepturi culpa est, sit dicta vitae
+                            eligendi deserunt autem nemo placeat, iusto id ipsa ex ut expedita?</p>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card card-cover h-100 p-5 overflow-hidden text-bg-white rounded-4 shadow-lg">
+                        <p class="fw-light text-dark my-auto">Lorem ipsum dolor sit amet, consectetur
+                            adipisicing elit. Iste, amet? Quam obcaecati dolore excepturi culpa est, sit dicta vitae
+                            eligendi deserunt autem nemo placeat, iusto id ipsa ex ut expedita?</p>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card card-cover h-100 p-5 overflow-hidden text-bg-white rounded-4 shadow-lg">
+                        <p class="fw-light text-dark my-auto">Lorem ipsum dolor sit amet, consectetur
+                            adipisicing elit. Iste, amet? Quam obcaecati dolore excepturi culpa est, sit dicta vitae
+                            eligendi deserunt autem nemo placeat, iusto id ipsa ex ut expedita?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Detail -->
+
+        <div class="album py-5">
+            <div class="container">
+
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    <!-- card-1 -->
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img class="rounded w-100" src="./Images/Course-1.jpeg" alt="Course-1" height="200rem">
+                            <div class="card-body text-center">
+                                <h2>B.Tech</h2>
+                                <p class="card-text">B.Tech is a professional undergraduate engineering degree</p>
+
+                                <% if(btech) { %>
+                                    <a href="/display" class="btn btn-info">
+                                        Course Display
+                                    </a>
+                                    <% }else{ %>
+
+                                        <button style="color: white;" type="button" class="btn btn-info"
+                                            data-bs-toggle="modal" data-bs-target="#aa">Register</button>
+                                        <% } %>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- card-2 -->
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img class="rounded w-100" src="./Images/Course-2.jpeg" alt="Course-2" height="200rem">
+                            <div class="card-body text-center">
+                                <h2>BCA</h2>
+                                <p class="card-text">BCA is a three-year Bachelor's Degree in Computer Application</p>
+
+
+
+                                <% if(bca) { %>
+                                    <a href="/display" class="btn btn-info">
+                                        Course Display
+                                    </a>
+                                    <% } else { %>
+
+                                        <button style="color: white;" type="button" class="btn btn-info"
+                                            data-bs-toggle="modal" data-bs-target="#bb">Register</button>
+                                        <% } %>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- card-3 -->
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img class="rounded w-100" src="./Images/Course-3.jpeg" alt="Course-3" height="200rem">
+                            <div class="card-body text-center">
+                                <h2>MCA</h2>
+                                <p class="card-text">MCA is a professional post-graduation degree in Computer
+                                    Application</p>
+                                    <% if(mca) { %>
+                                        <a href="/display" class="btn btn-info">
+                                            Course Display
+                                        </a>
+                                        <% } else { %>
+    
+                                            <button style="color: white;" type="button" class="btn btn-info" data-bs-toggle="modal"
+                                            data-bs-target="#cc">Register</button>
+                                            <% } %>
+
+
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- End Courses -->
+
+    <!--button trigger modal-->
+    <div class="modal fade" id="aa">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content"><!--!modal-content se from content ki space milti hai-->
+                <div class="modal-header"><!--! uppar title ka space milta hai-->
+                    <h5 class="modal-title">Admission Form</h5><!--!modal title se uppr title likh ataa hai-->
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                    <!--! btn-close se button cross ataa hai, data-bs-dismiss="modal" se vo button kaam krta hai-->
+                </div>
+                <!--modal header-->
+                <div class="modal-body"><!--!modal body se niche form bnta hai-->
+                    <form action="/courseInsert" method="post">
+                        Name:
+                        <input type="text" value="<%= n %>" name="name" placeholder="Name" class="form-control" />
+                        <br />
+                        Email:
+                        <input type="email" value="<%= e %>" name="email" placeholder="Email" class="form-control" />
+                        <br />
+                        Phone number:
+                        <input type="tel" name="phone" placeholder="Phone Number" class="form-control" />
+                        <br />
+                        Date of Birth:
+                        <input type="date" name="dob" placeholder="Date of Birth" class="form-control" />
+                        <br>
+                        Address:
+                        <br />
+                        <textarea name="address" id="" cols="50" rows="5"></textarea>
+                        <br><br>
+                        Gender:
+                        <input type="radio" name="gender" value="male">Male
+                        <input type="radio" name="gender" value="female">Female
+                        <input type="radio" name="gender" value="female">Others
+                        <br /> <br>
+                        Education:
+                        <select name="education" class="form-control">
+                            <option value="" disabled selected>Select Education</option>
+                            <option value="10th">10th</option>
+                            <option value="12th">12th</option>
+                            <option value="graduation">Graduation</option>
+                        </select>
+
+                        <br />
+                        Course:
+                        <input style="font-weight: bold;" type="text" name="course" class="form-control" readonly
+                            value="btech" />
+
+                        <br />
+                        <center><button type="submit" class="btn btn-primary">Submit</button></center>
+                    </form>
+                </div>
+                <!--modal body-->
+            </div>
+            <!--modal content-->
+        </div>
+        <!--modal dialog ---end-->
+    </div>
+    <!--modal end-->
+    <!--button trigger modal-->
+    <div class="modal fade" id="bb">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content"><!--!modal-content se from content ki space milti hai-->
+                <div class="modal-header"><!--! uppar title ka space milta hai-->
+                    <h5 class="modal-title">Admission Form</h5><!--!modal title se uppr title likh ataa hai-->
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                    <!--! btn-close se button cross ataa hai, data-bs-dismiss="modal" se vo button kaam krta hai-->
+                </div>
+                <!--modal header-->
+                <div class="modal-body"><!--!modal body se niche form bnta hai-->
+                    <form action="/courseInsert" method="post">
+                        Name:
+                        <input type="text" value="<%= n %>" name="name" placeholder="Name" class="form-control" />
+                        <br />
+                        Email:
+                        <input type="email" value="<%= e %>" name="email" placeholder="Email" class="form-control" />
+                        <br />
+                        Phone number:
+                        <input type="tel" name="phone" placeholder="Phone Number" class="form-control" />
+                        <br />
+                        Date of Birth:
+                        <input type="date" name="dob" placeholder="Date of Birth" class="form-control" />
+                        <br>
+                        Address:
+                        <br />
+                        <textarea name="address" id="" cols="50" rows="5"></textarea>
+                        <br><br>
+                        Gender:
+                        <input type="radio" name="gender" value="male">Male
+                        <input type="radio" name="gender" value="female">Female
+                        <input type="radio" name="gender" value="female">Others
+                        <br /> <br>
+                        Education:
+                        <select name="education" class="form-control">
+                            <option value="" disabled selected>Select Education</option>
+                            <option value="10th">10th</option>
+                            <option value="12th">12th</option>
+                            <option value="graduation">Graduation</option>
+                        </select>
+
+                        <br />
+                        Course:
+                        <input style="font-weight: bold;" type="text" name="course" class="form-control" readonly
+                            value="bca" />
+
+                        <br />
+                        <center><button type="submit" class="btn btn-primary">Submit</button></center>
+                    </form>
+                </div>
+                <!--modal body-->
+            </div>
+            <!--modal content-->
+        </div>
+        <!--modal dialog ---end-->
+    </div>
+    <!--modal end-->
+    <!--button trigger modal-->
+    <div class="modal fade" id="cc">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content"><!--!modal-content se from content ki space milti hai-->
+                <div class="modal-header"><!--! uppar title ka space milta hai-->
+                    <h5 class="modal-title">Admission Form</h5><!--!modal title se uppr title likh ataa hai-->
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                    <!--! btn-close se button cross ataa hai, data-bs-dismiss="modal" se vo button kaam krta hai-->
+                </div>
+                <!--modal header-->
+                <div class="modal-body"><!--!modal body se niche form bnta hai-->
+                    <form action="/courseInsert" method="post">
+                        Name:
+                        <input type="text" value="<%= n %>" name="name" placeholder="Name" class="form-control" />
+                        <br />
+                        Email:
+                        <input type="email" value="<%= e %>" name="email" placeholder="Email" class="form-control" />
+                        <br />
+                        Phone number:
+                        <input type="tel" name="phone" placeholder="Phone Number" class="form-control" />
+                        <br />
+                        Date of Birth:
+                        <input type="date" name="dob" placeholder="Date of Birth" class="form-control" />
+                        <br>
+                        Address:
+                        <br />
+                        <textarea name="address" id="" cols="50" rows="5"></textarea>
+                        <br><br>
+                        Gender:
+                        <input type="radio" name="gender" value="male">Male
+                        <input type="radio" name="gender" value="female">Female
+                        <input type="radio" name="gender" value="female">Others
+                        <br /> <br>
+                        Education:
+                        <select name="education" class="form-control">
+                            <option value="" disabled selected>Select Education</option>
+                            <option value="10th">10th</option>
+                            <option value="12th">12th</option>
+                            <option value="graduation">Graduation</option>
+                        </select>
+                        <br />
+                        Course:
+                        <input style="font-weight: bold;" type="text" name="course" class="form-control" readonly
+                            value="mca" />
+                        <br />
+                        <center><button type="submit" class="btn btn-primary">Submit</button></center>
+                    </form>
+                </div>
+                <!--modal body-->
+            </div>
+            <!--modal content-->
+        </div>
+        <!--modal dialog ---end-->
+    </div>
+    <!--modal end-->
+
+
+    <%- include('./layouts/footer.ejs') %>

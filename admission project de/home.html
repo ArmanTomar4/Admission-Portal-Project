@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Home</title>
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- Bootstrap Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <section id="navbar" class="fixed-top">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary rounded" aria-label="Thirteenth navbar example">
+            <div class="container-fluid">
+                <button class="navbar-toggler mobileViewButton" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarsExample11" aria-controls="navbarsExample11" aria-expanded="true"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="navbar-collapse d-lg-flex collapse justify-content-between text-center"
+                    id="navbarsExample11">
+                    <a class="navbar-brand col-lg-3 me-0 webViewPosition" href="#">
+                        <img class="rounded-circle" src="./Images/logo.jpeg" alt="logo" width="50px" height="50px">
+                    </a>
+                    <ul class="navbar-nav col-lg-6 justify-content-lg-end">
+                        <li class="nav-item my-auto">
+                            <a class="nav-link active text-dark" aria-current="page" href="./home.html">HOME</a>
+                        </li>
+                        <li class="nav-item my-auto">
+                            <a class="nav-link text-dark" href="./about.html">ABOUT</a>
+                        </li>
+                        <li class="nav-item my-auto">
+                            <a class="nav-link text-dark" href="#">CONTACT</a>
+                        </li>
+                        <li class="nav-item my-auto">
+                            <a class="nav-link text-dark" href="#">USER NAME</a>
+                        </li>
+                        <li class="nav-item dropdown my-auto">
+                            <a href="#"
+                                class="nav-link d-block link-body-emphasis text-decoration-none dropdown-toggle text-dark"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="https://github.com/mdo.png" alt="mdo" width="40" height="40"
+                                    class="rounded-circle">
+                            </a>
+                            <ul class="dropdown-menu text-small">
+                                <li><a class="dropdown-item" href="#">New project...</a></li>
+                                <li><a class="dropdown-item" href="#">Settings</a></li>
+                                <li><a class="dropdown-item" href="#">Profile</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Log out</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item my-auto">
+                            <button class="btn btn-primary me-3 border-light">Log out</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <!-- End Navbar -->
+
+    <!-- carousel -->
+    <section id="carousel">
+        <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+            <!-- <div class="carousel-indicators">
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"
+                    aria-label="Slide 1" aria-current="true"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"
+                    class=""></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"
+                    class=""></button>
+            </div> -->
+            
+            <div class="carousel-inner">
+                <!-- item-1 -->
+                <div class="carousel-item active" data-bs-interval="4000">
+                    <img class="carouselHeight" src="./Images/CampusImage-1.avif" alt="Campus Image-1" width="100%">
+                </div>
+
+                <!-- item-2 -->
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img class="carouselHeight" src="./Images/CampusImage-2.avif" alt="Campus Image-2" width="100%">
+                </div>
+
+                <!-- item-3 -->
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img class="carouselHeight" src="./Images/CampusImage-3.jpeg" alt="Campus Image-3" width="100%">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    <!-- End Carousel -->
+
+    <!-- Courses -->
+    <section id="courses">
+
+        <section class="pt-5 text-center container">
+            <div class="row py-lg-5">
+                <div class="col-lg-6 col-md-8 mx-auto">
+                    <h1 class="fw-light">Welcome User</h1>
+                    <p class="lead text-body-secondary">MAHARANA PRATAP COLLEGE OF TECHNOLOGY, GWALIOR</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Detail -->
+        <div class="container" id="detail">
+            <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+                <div class="col">
+                    <div class="card card-cover h-100 p-5 overflow-hidden text-bg-white rounded-4 shadow-lg">
+                        <p class="fw-light text-dark tmy-auto">Lorem ipsum dolor sit amet, consectetur
+                            adipisicing elit. Iste, amet? Quam obcaecati dolore excepturi culpa est, sit dicta vitae
+                            eligendi deserunt autem nemo placeat, iusto id ipsa ex ut expedita?</p>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card card-cover h-100 p-5 overflow-hidden text-bg-white rounded-4 shadow-lg">
+                        <p class="fw-light text-dark my-auto">Lorem ipsum dolor sit amet, consectetur
+                            adipisicing elit. Iste, amet? Quam obcaecati dolore excepturi culpa est, sit dicta vitae
+                            eligendi deserunt autem nemo placeat, iusto id ipsa ex ut expedita?</p>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card card-cover h-100 p-5 overflow-hidden text-bg-white rounded-4 shadow-lg">
+                        <p class="fw-light text-dark my-auto">Lorem ipsum dolor sit amet, consectetur
+                            adipisicing elit. Iste, amet? Quam obcaecati dolore excepturi culpa est, sit dicta vitae
+                            eligendi deserunt autem nemo placeat, iusto id ipsa ex ut expedita?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Detail -->
+
+        <div class="album py-5">
+            <div class="container">
+
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    <!-- card-1 -->
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img class="rounded w-100" src="./Images/Course-1.jpeg" alt="Course-1" height="200rem">
+                            <div class="card-body text-center">
+                                <h2>B.Tech</h2>
+                                <p class="card-text">B.Tech is a professional undergraduate engineering degree</p>
+                                <button type="button" class="btn btn-info">Register</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- card-2 -->
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img class="rounded w-100" src="./Images/Course-2.jpeg" alt="Course-2" height="200rem">
+                            <div class="card-body text-center">
+                                <h2>BCA</h2>
+                                <p class="card-text">BCA is a three-year Bachelor's Degree in Computer Application</p>
+                                <button type="button" class="btn btn-info">Register</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- card-3 -->
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img class="rounded w-100" src="./Images/Course-3.jpeg" alt="Course-3" height="200rem">
+                            <div class="card-body text-center">
+                                <h2>MCA</h2>
+                                <p class="card-text">MCA is a professional post-graduation degree in Computer
+                                    Application</p>
+                                <button type="button" class="btn btn-info">Register</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- End Courses -->
+
+    <!-- Footer -->
+    <section id="footer">
+        <div class="container">
+            <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 p-5 mt-5 border-top justify-content-between">
+
+                <div class="col mb-3">
+                    <label class="text-dark text-uppercase mb-4 fw-bold fs-5 p-2">Our Constituent Colleges</label>
+                    <!-- <h5 class="text-dark text-uppercase mb-4"><em>Our Constituent Colleges</em></h5> -->
+                    <ul class="nav flex-column p-2">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-dark">Institute of Engineering
+                                and Technology, Gwalior</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-dark">Institute of Engineering
+                                and Technology, Lucknow</a></li>
+                    </ul>
+                </div>
+
+                <div class="col mb-3">
+                    <label class="text-dark text-uppercase mb-4 fw-bold fs-5 p-2">Useful Links</label>
+                    <ul class="nav flex-column p-2">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-dark">Home</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-dark">About Us</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-dark">Contact</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-dark">Log out</a></li>
+                    </ul>
+                </div>
+
+                <div class="col mb-3">
+                    <label class="text-dark text-uppercase mb-4 fw-bold fs-5 p-2">Personal Detail</label>
+                    <ul class="nav flex-column p-2">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-dark"><i
+                                    class="fa-solid fa-envelope"></i>&nbsp;&nbsp;&nbsp;&nbsp;hr@mpct.in</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-dark"><i
+                                    class="fa-solid fa-phone"></i>&nbsp;&nbsp;&nbsp;&nbsp;9956082314</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-dark"><i class="fa-solid fa-location-dot"></i>&nbsp;&nbsp;&nbsp;&nbsp;Gwalior, U.P.,India</a>
+                        </li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+    </section>
+    <!-- End Footer -->
+
+    <!-- Social Media Link -->
+    <section id="social">
+        <div class="container">
+            <footer class="d-flex flex-wrap justify-content-center align-items-center py-3 border-top">
+
+                <!-- <ul class="nav col-md-4 justify-content-center list-unstyled d-flex">
+                    <li class="ms-3"><a class="text-white" href="#"><i class="fa-brands fa-facebook fs-4"></i></a></li>
+                    <li class="ms-3"><a class="text-white" href="#"><i class="fa-brands fa-youtube fs-4"></i></a></li>
+                    <li class="ms-3"><a class="text-white" href="#"><i class="fa-brands fa-linkedin fs-4"></i></a></li>
+                    <li class="ms-3"><a class="text-white" href="#"><i class="fa-brands fa-twitter fs-4"></i></a></li>
+                </ul> -->
+
+                <ul class="nav col-md-4 justify-content-center list-unstyled d-flex">
+                    <li class="ms-3 my-auto"><a class="text-white" href="#"><img src="./Images/fb-icon.png" alt="facebook icon" width="30px" height="30px"></a></li>
+                    <li class="ms-3 my-auto"><a class="text-white" href="#"><img src="./Images/yt-icon.jpeg" alt="youtube icon" width="40px" height="40px"></a></li>
+                    <li class="ms-3 my-auto"><a class="text-white" href="#"><img src="./Images/linkedin-icon.webp" alt="linkedin icon" width="30px" height="30px"></a></li>
+                    <li class="ms-3 my-auto"><a class="text-white" href="#"><img src="./Images/twitter-icon.png" alt="twitter icon" width="30px" height="30px"></a></li>
+                </ul>
+
+            </footer>
+        </div>
+    </section>
+    <!-- End Social Media Link -->
+
+    <!-- Java Script Link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
